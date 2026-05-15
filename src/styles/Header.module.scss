@@ -2,12 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 100px;
-  height: 68px;
+  padding: 2rem 8rem;
 }
 
 .logo {
-  height: 40px;
+  height: 68px;
 }
 
 .nav {
@@ -17,10 +16,9 @@
 }
 
 .link {
-  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 500;
-  color: #000000;
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -37,13 +35,13 @@
 //// RESPONSIVE DESIGN
 
 @media (max-width: 768px) {
-    .header {
+  .header {
     padding: 0 20px;
-    height: 56px;
+    height: 66px;
   }
 
   .logo {
-    height: 30px;
+    height: 46px;
   }
 
   .nav {
