@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  height: 68px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 57px;
+}
+
+.link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.linkActive {
+  text-decoration: underline;
+}
+
+
+//// RESPONSIVE DESIGN
+
+@media (max-width: 768px) {
+    .header {
+    padding: 0 20px;
+    height: 56px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .nav {
+    gap: 24px;
+  }
+
+  .link {
+    font-size: 12px;
+  }
+}
