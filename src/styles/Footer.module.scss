@@ -1,0 +1,41 @@
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 209px;
+  gap: 3px;
+}
+
+.logo {
+  height: 66px;
+}
+
+.copyright {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+
+//// RESPONSIVE DESIGN
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 0 20px;
+    height: 166px;
+  }
+
+  .logo {
+    height: 66px;
+  }
+
+  .link {
+    font-size: 12px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
