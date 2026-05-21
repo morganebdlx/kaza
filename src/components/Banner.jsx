@@ -1,5 +1,5 @@
-import styles from '../styles/Banner.module.scss'
-import bannerImage from '../assets/banner-image.png'
+import styles from '../styles/Banner.module.scss';
+import bannerImage from '../assets/banner-image.png';
 
 function Banner() {
   return <div className={styles.banner}>

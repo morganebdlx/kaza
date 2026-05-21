@@ -22,7 +22,6 @@
   font-weight: 500;
   color: black;
   text-decoration: none;
-  text-transform: uppercase;
 
   &:hover {
     text-decoration: underline;
@@ -36,11 +35,24 @@
 
 //// RESPONSIVE DESIGN
 
+@media (max-width: 1280px) {
+  .header {
+    width: 100%;
+    padding: 2rem 40px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 1024px) {
+  .link {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
-    padding: 0 20px;
+    padding: 1rem 20px;
     height: 66px;
-    width: 335px;
   }
 
   .logo {

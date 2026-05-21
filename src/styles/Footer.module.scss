@@ -21,18 +21,19 @@
 
 //// RESPONSIVE DESIGN
 
+@media (max-width: 1024px) {
+  .copyright {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 768px) {
   .footer {
-    padding: 0 20px;
     height: 166px;
   }
 
   .logo {
-    height: 66px;
-  }
-
-  .link {
-    font-size: 12px;
+    height: 46px;
   }
 
   .copyright {
