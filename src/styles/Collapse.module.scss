@@ -1,0 +1,60 @@
+.collapse {
+  width: 1023px;
+  margin: 24px auto 24px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  height: 64px;
+  background-color: #ff6060;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+.content {
+  padding: 24px;
+  background-color: #f6f6f6;
+  color: #000000;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+
+//// RESPONSIVE DESIGN
+
+@media (max-width: 1280px) {
+  .collapse {
+    width: calc(100% - 80px);
+  }
+}
+
+@media (max-width: 768px) {
+  .collapse {
+    width: calc(100% - 40px);
+  }
+
+  .title {
+    font-size: 13px;
+  }
+
+  .content {
+    font-size: 12px;
+  }
+}
