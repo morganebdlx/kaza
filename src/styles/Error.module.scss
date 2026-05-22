@@ -1,0 +1,49 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.error h1 {
+  font-size: 288px;
+  color: #FF6060;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.error p {
+  font-size: 36px;
+  color: #FF6060;
+  margin-bottom: 8rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.error a {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #000000;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+
+//// RESPONSIVE DESIGN
+
+
+@media (max-width: 768px) {
+  .error h1 {
+    font-size: 96px;
+  }
+
+  .error p {
+    font-size: 18px;
+    margin-bottom: 4rem;
+  }
+}
