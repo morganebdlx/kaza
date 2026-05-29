@@ -17,8 +17,6 @@
   border-radius: 5px;
 }
 
-
-
 .content {
   padding: 24px;
   background-color: #f6f6f6;
@@ -30,6 +28,8 @@
 .chevron {
   transition: transform 0.3s ease;
   flex-shrink: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .chevronOpen {
@@ -52,6 +52,9 @@
 
   .title {
     font-size: 13px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 10px;
   }
 
   .content {

@@ -1,0 +1,65 @@
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.arrow svg {
+  width: 100px;
+  height: 100px;
+}
+
+.arrowLeft {
+  left: 5px;
+}
+
+.arrowRight {
+  right: 5px;
+}
+
+.counter {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+//// RESPONSIVE DESIGN
+
+@media (max-width: 768px) {
+  .slideshow {
+    height: 255px;
+    border-radius: 10px;
+  }
+
+  .arrow svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .counter {
+    display: none;
+  }
+}

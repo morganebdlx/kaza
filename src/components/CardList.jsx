@@ -6,7 +6,7 @@ function CardList() {
   // map sur les annonces pour créer une card pour chaque annonce
   return <div className={style.container}>
           {annonces.map(annonce =>
-          <Card key={annonce.id} cover={annonce.cover} title={annonce.title} />)}
+          <Card key={annonce.id} id={annonce.id} cover={annonce.cover} title={annonce.title} />)}
         </div>
 }
 
