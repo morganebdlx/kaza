@@ -1,0 +1,23 @@
+.collapse {
+  width: 1023px;
+  margin: 24px auto 24px;
+}
+
+.collapseTitle {
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+
+//// RESPONSIVE DESIGN
+
+@media (max-width: 768px) {
+  .collapse {
+    width: calc(100% - 40px);
+  }
+
+  .collapseTitle {
+    font-size: 13px;
+    border-radius: 5px;
+  }
+}

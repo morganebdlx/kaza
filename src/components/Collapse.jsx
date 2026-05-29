@@ -2,7 +2,7 @@ import styles from '../styles/Collapse.module.scss'
 import { useState } from 'react';
 
 
-function Collapse({ title, content }) {
+function Collapse({ title, content, collapseClassName, titleClassName }) {
   // ouverture et fermeture de la section
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,8 +12,9 @@ function Collapse({ title, content }) {
   };
 
   // affichage du titre et du contenu de la section
-  return <div className={styles.collapse}>
-      <div className={styles.title} onClick={toggleCollapse}>
+  return <div className={`${styles.collapse} ${collapseClassName || ''}`}>
+  {/* className pour pouvoir ajouter une classe spécifique à chaque dropdown */}
+      <div className={`${styles.title} ${titleClassName || ''}`} onClick={toggleCollapse}>
         <span>{title}</span>
          <svg
           className={`${styles.chevron} ${isOpen ? styles.chevronOpen : ''}`}

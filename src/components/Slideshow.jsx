@@ -17,20 +17,19 @@ function Slideshow({ images }) {
             {/* affichage de l'image courante  */}
             <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} className={styles.image} />
             {/* affichage des flèches de navigation seulement si il y a plus d'une image dans le slideshow */}
-            <button className={`${styles.arrow} ${styles.arrowLeft}`} onClick={prevImage}>
+            {images.length > 1 && <button className={`${styles.arrow} ${styles.arrowLeft}`} onClick={prevImage}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" width="47" height="80">
                 <polyline points="15 18 9 12 15 6" />
               </svg>
-
-            </button>
+            </button>}
             {/* affichage de la flèche de navigation droite seulement si il y a plus d'une image dans le slideshow */}
-            <button className={`${styles.arrow} ${styles.arrowRight}`} onClick={nextImage}>
+            {images.length > 1 && <button className={`${styles.arrow} ${styles.arrowRight}`} onClick={nextImage}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" width="47" height="80">
                 <polyline points="9 6 15 12 9 18" />
               </svg>
-            </button>
+            </button>}
             {/* compteur pour afficher le numéro de l'image courante et le nombre total d'images */}
-            <span className={styles.counter}>{currentIndex + 1} / {images.length}</span>
+            {images.length > 1 && <span className={styles.counter}>{currentIndex + 1} / {images.length}</span>}
         </div>
 }
 

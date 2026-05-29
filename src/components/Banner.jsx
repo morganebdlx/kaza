@@ -1,11 +1,11 @@
 import styles from '../styles/Banner.module.scss';
-import bannerImage from '../assets/banner-image.png';
 
-function Banner() {
+function Banner({ image, text }) {
   return <div className={styles.banner}>
-      <img src={bannerImage} alt="Paysage" className={styles.image} />
+      <img src={image} alt="Paysage" className={styles.image} />
       <div className={styles.overlay}></div>
-      <h1 className={styles.title}>Chez vous, partout et ailleurs</h1>
+      {text && <h1 className={styles.title}>{text}</h1>}
+      {/* texte seulement si props remplie, sinon pas de titre */}
   </div>
 }
 
